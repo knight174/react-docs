@@ -1,6 +1,6 @@
-# React 学习文档
+# React 学习手册
 
-这是一个使用 VitePress 构建的 React 学习文档网站，用于系统化记录 React 的学习内容。
+这是一个使用 VitePress 构建的 React 学习手册网站，用于系统化记录 React 的核心概念、最佳实践。
 
 ## 内容概览
 
@@ -17,30 +17,38 @@
 
 ### 环境要求
 
-- Node.js 16+
+- Node.js 18+
 - pnpm/npm
 
 ### 安装依赖
 
 ```bash
+npm install
+# 或者使用 pnpm
 pnpm install
 ```
 
 ### 启动开发服务器
 
 ```bash
+npm run docs:dev
+# 或者使用 pnpm
 pnpm run docs:dev
 ```
 
 ### 构建静态网站
 
 ```bash
+npm run docs:build
+# 或者使用 pnpm
 pnpm run docs:build
 ```
 
 ### 预览构建结果
 
 ```bash
+npm run docs:preview
+# 或者使用 pnpm
 pnpm run docs:preview
 ```
 
