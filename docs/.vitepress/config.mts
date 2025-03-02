@@ -4,6 +4,31 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'React 学习文档',
   description: '系统化的 React 学习指南',
+
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: 'React 学习文档',
+      description: '系统化的 React 学习指南',
+      link: '/',
+    },
+    'zh-TW': {
+      label: '繁體中文',
+      lang: 'zh-TW',
+      title: 'React 學習文檔',
+      description: '系統化的 React 學習指南',
+      link: '/zh-TW/',
+    },
+    pt: {
+      label: 'Português',
+      lang: 'pt-BR',
+      title: 'Documentação React',
+      description: 'Guia sistemático de aprendizado React',
+      link: '/pt/',
+    },
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -22,7 +47,7 @@ export default defineConfig({
 
     // 侧边栏
     sidebar: {
-      '/basics/': [
+      '/': [
         {
           text: '基础概念',
           items: [
@@ -37,8 +62,6 @@ export default defineConfig({
             { text: '列表和键', link: '/basics/lists-keys' },
           ],
         },
-      ],
-      '/hooks/': [
         {
           text: 'Hooks 教程',
           items: [
@@ -54,59 +77,35 @@ export default defineConfig({
           ],
         },
       ],
-      '/state/': [
+      '/zh-TW/': [
         {
-          text: '状态管理',
+          text: '基础概念',
           items: [
-            { text: '状态管理介绍', link: '/state/' },
-            { text: 'Context API', link: '/state/context-api' },
-            { text: 'Redux', link: '/state/redux' },
-            { text: 'Redux Toolkit', link: '/state/redux-toolkit' },
-            { text: 'Zustand', link: '/state/zustand' },
-            { text: 'Recoil', link: '/state/recoil' },
-            { text: 'Jotai', link: '/state/jotai' },
-            { text: '方案对比', link: '/state/comparison' },
+            { text: '介绍', link: '/zh-TW/basics/' },
+            { text: 'JSX', link: '/zh-TW/basics/jsx' },
+            { text: '组件', link: '/zh-TW/basics/components' },
+            { text: 'Props', link: '/zh-TW/props' },
+            { text: 'State', link: '/zh-TW/state' },
+            { text: '生命周期', link: '/zh-TW/lifecycle' },
+            { text: '事件处理', link: '/zh-TW/events' },
+            { text: '条件渲染', link: '/zh-TW/conditional-rendering' },
+            { text: '列表和键', link: '/zh-TW/lists-keys' },
           ],
         },
       ],
-      '/router/': [
+      '/pt/': [
         {
-          text: 'React Router',
+          text: 'Conceitos Básicos',
           items: [
-            { text: '路由介绍', link: '/router/' },
-            { text: '基础路由', link: '/router/basic-routing' },
-            { text: '嵌套路由', link: '/router/nested-routes' },
-            { text: '路由参数', link: '/router/route-parameters' },
-            { text: '编程式导航', link: '/router/programmatic-navigation' },
-            { text: '受保护路由', link: '/router/protected-routes' },
-          ],
-        },
-      ],
-      '/performance/': [
-        {
-          text: '性能优化',
-          items: [
-            { text: '性能优化介绍', link: '/performance/' },
-            { text: '代码分割', link: '/performance/code-splitting' },
-            { text: '懒加载', link: '/performance/lazy-loading' },
-            { text: 'React.memo', link: '/performance/memo' },
-            { text: '虚拟化', link: '/performance/virtualization' },
-            { text: '打包优化', link: '/performance/bundle-optimization' },
-            { text: '性能分析', link: '/performance/profiling' },
-          ],
-        },
-      ],
-      '/examples/': [
-        {
-          text: '实践案例',
-          items: [
-            { text: '案例介绍', link: '/examples/' },
-            { text: 'Todo 应用', link: '/examples/todo-app' },
-            { text: '表单处理', link: '/examples/form-handling' },
-            { text: '身份验证', link: '/examples/authentication' },
-            { text: '数据获取', link: '/examples/data-fetching' },
-            { text: '暗黑模式', link: '/examples/dark-mode' },
-            { text: '响应式设计', link: '/examples/responsive-design' },
+            { text: 'Introdução', link: '/pt/basics/' },
+            { text: 'JSX', link: '/pt/basics/jsx' },
+            { text: 'Componentes', link: '/pt/basics/components' },
+            { text: 'Props', link: '/pt/props' },
+            { text: 'State', link: '/pt/state' },
+            { text: '生命周期', link: '/pt/lifecycle' },
+            { text: '事件处理', link: '/pt/events' },
+            { text: '条件渲染', link: '/pt/conditional-rendering' },
+            { text: '列表和键', link: '/pt/lists-keys' },
           ],
         },
       ],
