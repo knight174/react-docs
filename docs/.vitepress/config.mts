@@ -5,6 +5,8 @@ export default defineConfig({
   title: 'React 学习文档',
   description: '系统化的 React 学习指南',
 
+  base: '/react-docs/',
+
   ignoreDeadLinks: true,
 
   locales: {
